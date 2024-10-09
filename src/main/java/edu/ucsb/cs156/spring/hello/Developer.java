@@ -16,10 +16,8 @@ public class Developer {
      */
 
     public static String getName() {
-        // TODO: Change this to your name
         // You may use just the name that is used on <https://bit.ly/cs156-f24-teams>
         // i.e. your first name, or your first and initial of last name
-
         return "Nilay";
     }
 
@@ -29,7 +27,6 @@ public class Developer {
      */
 
     public static String getGithubId() {
-        // TODO: Change this to your github id
         return "nilay-kundu";
     }
 
@@ -39,7 +36,6 @@ public class Developer {
      */
     
     public static Team getTeam() {
-        // TODO: Change this to your team name
         Team team = new Team("f24-04");
         team.addMember("Nilay");
         team.addMember("Piyush");
