@@ -54,4 +54,20 @@ public class TeamTest {
         test_wrong_name.addMember("Mary Jane");
         assertEquals(false, team.equals(test_wrong_name));
     }
+
+    @Test
+    public void hashCode_returns_correct_code() {
+        Team t1 = new Team();
+        t1.setName("foo");
+        t1.addMember("bar");
+        Team t2 = new Team();
+        t2.setName("foo");
+        t2.addMember("bar");
+        assertEquals(t1.hashCode(), t2.hashCode());
+
+        Team t = new Team("test");
+        int result = t.hashCode();
+        int expectedResult = 3556499;
+        assertEquals(expectedResult, result);
+    }
 }
